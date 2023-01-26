@@ -1,5 +1,5 @@
 import { createQueue } from './queue.mjs'
-function createNode(key) {
+export function createNode(key) {
   const neighbors = []
   return {
     key,
@@ -10,7 +10,7 @@ function createNode(key) {
   }
 }
 
-function createGraph(directed = false) {
+export function createGraph(directed = false) {
   const nodes = []
   const edges = []
 
